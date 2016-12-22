@@ -11,7 +11,7 @@
 </head>
 
 <body id="updates">
-	<script id="template" type="text/x-handlebars-template">
+	<!-- <script id="template" type="text/x-handlebars-template"> -->
 
 	<div class="app"></div>
 	<div class="header">
@@ -31,18 +31,17 @@
 				</div>
 				<div class="col-md-6">
 					<div class="total-questions">
-						Total Questions: 0
+						Total Questions: <span class="total-questions-counter"></span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="question-header">
-			<h1 class="question-title">Question #<span class="question-id">{{id}}</span></h1>
-			<h3 class="question-category">Category: {{category.title}}y</h3>
+			<h1 class="question-title">Question #<span class="question-id"></span></h1>
+			<h3 class="question-category">Category: <span class="question-category"></span></h3>
 			<p class="question-description">
-				{{question}}
 			</p>
-			<button class="skip-button btn btn-primary">
+			<button id="skip" class="skip-button btn btn-primary">
 			Skip
 		</button>
 		</div>
@@ -86,9 +85,9 @@
 			</div>
 		</div>
 	</div>
-	</script>
+	<!-- </script> -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script> -->
 <script src="js/script.js"></script>
 </html>
