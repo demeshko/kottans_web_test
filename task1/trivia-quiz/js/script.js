@@ -15,10 +15,6 @@ function getQuestion() {
   });
 }
 
-/**
- * Randomize array element order in-place.
- * Using Durstenfeld shuffle algorithm.
- */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -65,7 +61,6 @@ $(function(){
     });
     if (answer ===  questionAnswer) {
       $("#myModal").modal();
-      // alert("win");
       answerCounter++;
       totalQuestions++;
       $('#shuffled-answer').empty();
@@ -85,7 +80,7 @@ $(function(){
     let chr = $(this).parent('.inline-block');
     $(this).parent('.inline-block').remove();
     $('#shuffled-answer').append(chr);
-    
+
   });
 
 });
