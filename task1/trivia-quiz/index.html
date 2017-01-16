@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<title>Trivial Quiz</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="correct-answers">
-						Correct Answers: 0
+						Correct Answers: <span class="correct-answers-counter"></span>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -47,47 +47,51 @@
 		</div>
 		<!-- Answer section -->
 		<div class="answer-section">
-			<div class="answer-container">
-				<ul class="inline-list characters-container">
-					<li class="inline-block">
+			<div id="answer-check-container" class="answer-container">
+				<ul id="answer-check" class="inline-list characters-container">
+			<!-- 		<li class="inline-block">
 						<button class="character">G</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">O</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">M</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">A</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">N</button>
-					</li>
+					</li> -->
+			
 				</ul>
 			</div>
 		</div>
 		<!-- Answer proposition -->
 		<div class="answers-for-drag">
 			<div class="answer-container">
-				<ul class="inline-list proposition-characters-container">
-					<li class="inline-block">
-						<button class="character">F</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">O</button>
-					</li>
-					<li class="inline-block">
-						<button class="character">L</button>
-					</li>
-
+				<ul id="shuffled-answer" class="inline-list proposition-characters-container">
+					<!-- <li class="inline-block">
+						<button class="character">G</button>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Bingo!</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Correct answer!</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
 	<!-- </script> -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script> -->
 <script src="js/script.js"></script>
 </html>
