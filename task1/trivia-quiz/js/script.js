@@ -28,11 +28,11 @@ function shuffleArray(array) {
 function addButtons(answer) {
   let shuffledArray = shuffleArray(answer.split(""));
   let len = shuffledArray.length;
-         for (let i = 0; i < len; i++) {
-          // console.log(i);
-          let li = $('<li class="inline-block"><button class="character">' + shuffledArray[i] + "</button></li>");
-          $("#shuffled-answer").append(li);
-        }
+    for (let i = 0; i < len; i++) {
+      // console.log(i);
+      let li = $('<li class="inline-block"><button class="character">' + shuffledArray[i] + "</button></li>");
+      $("#shuffled-answer").append(li);
+    }
 }
 
 function bindQuestion(question) {
