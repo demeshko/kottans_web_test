@@ -2,7 +2,7 @@ let totalQuestions = 0;
 let answerCounter = 0;
 let questionAnswer = '';
 function getQuestion() {
-  $.get('http://jservice.io/api/random').done(function(data) {
+  $.get('https://jservice.io/api/random').done(function(data) {
 	  let question = data[0];
     if (question.answer.split(" ").length > 1) {
     	// console.log("reject: " + question.answer);
